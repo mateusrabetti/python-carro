@@ -15,7 +15,7 @@ def create_carro(carro_data):
         json.dumps({
             "mensagem": "carro cadastrado com sucesso",
             "carro": novo_carro.json()
-        })
+        }, sort_keys=False)
     )
     response.headers["content=type"] = "application/json"
-    return response        
+    return response
